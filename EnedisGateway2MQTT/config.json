@@ -1,41 +1,29 @@
 {
-  "name": "SomfyProtect2MQTT",
-  "version": "0.1.5",
-  "slug": "somfy-protect-2-mqtt",
-  "description": "Publish Somfy Home Alarm as MQTT messages",
-  "url": "https://github.com/schumijo/homeassistant-addons/tree/main/SomfyProtect2MQTT",
+  "name": "EnedisGateway2MQTT",
+  "version": "0.3.1",
+  "slug": "EnedisGateway2MQTT",
+  "description": "EnedisGateway2MQTT use Enedis Gateway API to send data in your MQTT Broker.",
+  "url": "https://github.com/foXaCe/homeassistant-addons",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
   "options": {
     "somfy_protect": {
-      "username": "mail@example.org",
-      "password": "iliketurtles",
-      "sites": ["Maison"]
-    },
-    "homeassistant_config": {
-      "code": "set code or remove this line to disable code",
-      "code_arm_required": false,
-      "code_disarm_required": false
+      "acces_token": "",
+      "pdl": "",
+	  "retain": "true",
+	  "qos": "o",
+	  "get_consumption": "true",
+	  "get_production": "true",
     },
     "mqtt": {
-      "host": "192.168.x.x",
+      "host": "192.168.1.xx",
       "port": 1883,
-      "username": "homeassistant",
-      "password": "homeassistant",
-      "client-id": "somfy-protect",
-      "topic_prefix": "somfyProtect2mqtt",
+      "username": "enedis_gateway_username",
+      "password": "enedis_gateway_password",
+      "client-id": "enedis_gateway",
+      "topic_prefix": "enedis_gateway",
       "ha_discover_prefix": "homeassistant"
-    },
-    "delay_site": "10",
-    "delay_device": "60",
-    "debug": false
-  },
-  "schema": {
-    "somfy_protect": {
-      "username": "str",
-      "password": "str",
-      "sites": ["str"]
     },
     "homeassistant_config": {
       "code": "int?",
