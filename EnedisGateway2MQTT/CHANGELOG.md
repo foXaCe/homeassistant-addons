@@ -1,39 +1,16 @@
 # Changelog
 
-## 0.1.5
-
-- Fix homeassistant_config schema
-
-## 0.1.4
-
-- Use SomfyProtect2MQTT 0.1.3
-- Fix OutDoor Camera Snapshot
-- Add possibilty to setup a code on alarm panel
-- Allow to disable code on arm and/or disarm
-
-## 0.1.3
-
-- Use SomfyProtect2MQTT 0.1.2
-- Fix Stop Alarm
-- Fix Trigger Alarm
-- Do not publish unwanted devices
-
-## 0.1.2
-
-- Add build.json file (thanks to @Minims)
-
-## 0.1.1
-
-- Use SomfyProtect2MQTT 0.1.1 (Improve device update on action and camera snapshot refresh)
-
-## 0.1.0
-
-- Addon renamed "SomfyProtect2MQTT"
-- Lot of code rewritten (thanks to @Minims)
-- Migrate to Minims/SomfyProtect2MQTT master branch
-- Based on release v0.1.0b
-- Added logo, icon, changelog, docs...
-
-## 0.0.1 to 0.0.4
-
-- Initial version with minor fixes
+[0.3.1] - 2021-09-29
+Fix error when API call limit is reached.
+[0.3] - 2021-09-28
+Rework ha discovery to reduce items
+Fix ha_autodiscovery always enable
+Get Production
+Add SQLite database to store data and reduce number of API Call.
+[0.2] - 2021-09-25
+Helm chart
+Home Assistant auto-discovery
+Add Retain & QoS (MQTT)
+Add Timestamp in log
+[0.1] - 2021-09-24
+First Release

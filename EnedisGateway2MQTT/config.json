@@ -8,7 +8,7 @@
   "startup": "application",
   "boot": "auto",
   "options": {
-    "somfy_protect": {
+    "enedis_gateway": {
       "acces_token": "",
       "pdl": "",
 	  "retain": "true",
