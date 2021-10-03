@@ -1,10 +1,15 @@
-# Home Assistant Add-on: SomfyProtect2MQTT
+# Home Assistant Add-on: EnedisGateway2MQTT
 
-Allows you to control your Somfy Home Alarm without the App.
+EnedisGateway2MQTT use Enedis Gateway API to send data in your MQTT Broker.
 
-It bridges events and allows you to control your Alarm devices via MQTT.
-In this way you can integrate it to HomeAssistant.
+Sometimes it takes several days for Enedis to activate the collection.
 
-See [SomfyProtect2MQTT] for more details.
+Activation is only valid for 1 year.
 
-[SomfyProtect2MQTT]: https://github.com/Minims/SomfyProtect2MQTT
+Enedis Gateway limit to 50 call per day / per pdl.
+
+If you reach this limit, you will be banned for 24 hours!
+
+See [EnedisGateway2MQTT] for more details.
+
+[EnedisGateway2MQTT]: https://github.com/m4dm4rtig4n/enedisgateway2mqtt
